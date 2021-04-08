@@ -1,0 +1,11 @@
+language: python
+dist: xenial
+python: 
+  - 3.6
+  - 3.8
+
+before_script:
+  - python -m pip install nox
+  
+script:
+  - nox -s test
